@@ -24,8 +24,8 @@ class xorg (
     $path_freebsd = ["/bin", "/sbin","/usr/bin", "/usr/sbin", "/usr/local/bin", "/usr/local/sbin"]
     
     #Install latest nvidia drivers
-    package {"nvidia-driver-331.49": ensure => latest,}
-    package {"nvidia-settings-310.14": ensure => latest,}
+    package {"nvidia-driver-331": ensure => latest,}
+    package {"nvidia-settings-310": ensure => latest,}
 
     #Install xorg
     package {"xorg": ensure => latest,}
