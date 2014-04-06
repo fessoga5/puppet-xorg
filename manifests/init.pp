@@ -4,7 +4,7 @@
 #fessoga5@gmail.com
 #
 class xorg (
-    $rc_status="YES",
+    $enabled="YES",
     $device="Device 0",
     $driver="nvidia",
     $monitor_command="1920x1080_60 +0+0; nvidia-auto-select +0+0",
