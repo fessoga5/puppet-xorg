@@ -7,7 +7,7 @@ class xorg (
     $rc_status="YES",
     $device="Device 0",
     $driver="nvidia",
-    $monitor_command="1920x1080_60 +0+0; nvidia-auto-select +0+0"
+    $monitor_command="1920x1080_60 +0+0; nvidia-auto-select +0+0",
     ) {
     #autostart. Add to rc.conf
     #We have hald_enable in rc.conf
