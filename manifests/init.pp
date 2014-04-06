@@ -25,7 +25,7 @@ class xorg (
     
     #Install latest nvidia drivers
     package {"nvidia-driver": ensure => latest,}
-    package {"nvidia-settings-310": ensure => latest,}
+    package {"nvidia-settings": ensure => latest,}
 
     #Install xorg
     package {"xorg": ensure => latest,}
