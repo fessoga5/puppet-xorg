@@ -10,15 +10,15 @@ class xorg (
     $monitor_command="1920x1080_60 +0+0; nvidia-auto-select +0+0",
 ) 
 {
-    $rc_status = $enabled ? {
-        true => "YES",
-        false => "NO",
-    }
+    #$rc_status = $enabled ? {
+    #    true => "YES",
+    #    false => "NO",
+    #}
 
-    augeas {"rc.conf":
-        context => "/files/etc/rc.conf",
-        changes => ["set hald_enable $rc_status"],
-    }
+    #augeas {"rc.conf":
+    #    context => "/files/etc/rc.conf",
+    #    changes => ["set hald_enable $rc_status"],
+    #}
 
     #variables
     $path_freebsd = ["/bin", "/sbin","/usr/bin", "/usr/sbin", "/usr/local/bin", "/usr/local/sbin"]
